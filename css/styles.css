@@ -1,0 +1,57 @@
+* {
+  font-family: cursive;
+}
+
+.uppercontainer {
+  display: flex;
+}
+
+.filler {
+  margin: 0.5rem;
+}
+
+.lowercontainer {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: auto;
+  background-color: rgb(245, 245, 245);
+}
+
+.taskstatus {
+  border: solid 0.1rem;
+}
+
+.tasktitles {
+  text-align: center;
+  border-bottom: solid 0.1rem;
+}
+
+.newTodo {
+  background-color: aqua;
+  border: solid 2rem rgb(245, 245, 245);
+}
+
+.newInprogress {
+  background-color: violet;
+  border: solid 2rem rgb(245, 245, 245);
+}
+
+.newTesting {
+  background-color: yellowgreen;
+  border: solid 2rem rgb(245, 245, 245);
+}
+
+.newDone {
+  background-color: green;
+  border: solid 2rem rgb(245, 245, 245);
+}
+
+.RecycleBin {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.3rem;
+}
+
+.hide {
+  display: none;
+}

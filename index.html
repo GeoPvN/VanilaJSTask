@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="uppercontainer">
+      <div>
+        <div class="filler"><label for="taskName"> Task Name </label></div>
+        <div class="filler"><input id="taskName" type="text" /></div>
+        <div class="filler">
+          <label for="taskDesc"> Task Description </label>
+        </div>
+        <div class="filler"><input id="taskDesc" type="text" /></div>
+        <div class="filler"><label for="taskAssign"> Task Asignee </label></div>
+        <div class="filler"><input id="taskAssign" type="text" /></div>
+      </div>
+      <div>
+        <div class="filler"><label for="statuslist"> Task Asignee </label></div>
+        <div class="filler">
+          <select name="todolist" id="statuslist">
+            <option value="todo">To Do</option>
+            <option value="inprogress">In Progress</option>
+            <option value="testing">Testing</option>
+            <option value="done">Done</option>
+          </select>
+        </div>
+        <div class="filler">
+          <button id="addTask" onclick="addtask()">Add Task</button>
+          <button id="editTask" onclick="editTask()" class="hide">
+            Edit Task
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="lowercontainer">
+      <div class="taskstatus" id="todoMember">
+        <div class="tasktitles">To Do</div>
+      </div>
+      <div class="taskstatus" id="inprogressMember">
+        <div class="tasktitles">In Progress</div>
+      </div>
+      <div class="taskstatus" id="testingMember">
+        <div class="tasktitles">Testing</div>
+      </div>
+      <div class="taskstatus" id="doneMember">
+        <div class="tasktitles">Done</div>
+      </div>
+    </div>
+  </body>
+</html>
